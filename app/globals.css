@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sidebar-icon {
+    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 
+        mx-auto shadow-lg  text-teal-500 hover:rounded-xl hover:text-gray-800 
+        hover:bg-teal-500 hover:shadow-xl hover:scale-110 hover:transition-all duration-300 ease-in-out;
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.blob {
+  /* animation: rotate 20s infinite; */
+  translate: -50% -50%;
+  
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
