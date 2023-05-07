@@ -3,9 +3,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
     // serverComponentsExternalPackages: ["bcrypt"],
-    outputFileTracingRoot: path.join(__dirname, '../../'),
+    // outputFileTracingRoot: path.join(__dirname, '../../'),
   },
-  output: 'standalone'
+  // output: 'standalone'
 };
 
 module.exports = nextConfig;

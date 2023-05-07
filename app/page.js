@@ -7,7 +7,11 @@ const HomePage = () => {
   const blobRef = useRef(null);
   const router = useRouter();
   useEffect(() => {
-    router.push("/");
+
+    //get the current path
+    let currentPath = router.pathname;
+    console.log(currentPath);
+    
     const onMouseMove = (e) => {
       blobRef.current.animate(
         {
